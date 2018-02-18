@@ -18,6 +18,8 @@ class Transfer
       self.sender.balance -= self.amount
       self.receiver.balance += self.amount
       self.sender.close_account
+      self.receiver.close_account
+      self.status = "complete"
   end
 
 end
