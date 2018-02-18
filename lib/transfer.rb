@@ -20,6 +20,9 @@ class Transfer
       self.sender.close_account
       self.receiver.close_account
       self.status = "complete"
+    else
+      self.status = "rejected"
+      "Transaction #{self.status}. Please check your account balance."
     end
   end
 
