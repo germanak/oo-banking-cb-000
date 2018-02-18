@@ -20,6 +20,7 @@ class Transfer
       self.sender.close_account
       self.receiver.close_account
       self.status = "complete"
+    end
   end
 
 end
